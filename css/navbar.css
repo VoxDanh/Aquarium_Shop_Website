@@ -1,4 +1,3 @@
-/* sắp xếp thứ tự */
 .navbar { 
     position: fixed; 
     top: 2rem;       
@@ -9,14 +8,15 @@
     width: 80%;
     height: 80px;
     padding: 1rem;
-    border: 1.5px solid transparent; /* đổi border: từ 1px solid trắng mờ -> transparent gradient */
+    border: 1.5px solid transparent; 
     border-radius: 30px;
     background: 
-        linear-gradient(90deg, rgba(255,255,255,0.9), rgba(173,216,230,0.6), rgba(30,144,255,0.6)) padding-box, /** đổi nền: từ màu xám mờ -> fresh aqua gradient */
-        linear-gradient(90deg, #e74c3c, #1e90ff) border-box; /** thêm border gradient */
+        linear-gradient(90deg, rgba(255,255,255,0.9), rgba(173,216,230,0.6), rgba(30,144,255,0.6)) padding-box, 
+        linear-gradient(90deg, #e74c3c, #1e90ff) border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     backdrop-filter: blur(10px);
+    z-index: 1000; /* 👈 thêm dòng này */
 }
 
 .navbar-logo-container {
@@ -24,12 +24,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 2rem; /* đổi từ 3rem -> 2rem */
+    margin-left: 2rem; 
 }
 
 .navbar-logo {
     width: auto;
-    height: 100px; /* đổi từ 150px -> 100px */
+    height: 100px; 
 }
 
 .navbar-menu {
@@ -47,44 +47,44 @@
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bolder;
-    color: #012c56; /* đổi từ màu trắng mờ -> navy */
+    color: #012c56; 
 }
 
 .active {
-    color: #1d88f3; /* đổi từ rgba xanh mờ -> xanh sáng */
+    color: #1d88f3; 
 }
 
 
 
 .navbar-menu-item-text:hover {
-    background-color: rgba(255,255,255,0.2); /* đổi nền hover: từ đen mờ -> trắng mờ */
+    background-color: rgba(255,255,255,0.2); 
     border-radius: 20px;
-    color: #e74c3c; /* đổi hover text: từ trắng -> đỏ cam */
+    color: #e74c3c; 
     transition: background-color 0.3s ease;
 }
 
 .navbar-submenu {
     position: absolute;
-    top: 100%; /* đổi từ 50% -> 100% để submenu nằm hẳn dưới menu chính */
+    top: 100%; 
     left: 0;
-    margin-top: 10px; /* đổi từ 20px -> 10px cho cân đối */
-    padding: 0.75rem 1rem; /* gọn lại padding (thay vì nhiều dòng lặp) */
+    margin-top: 10px; 
+    padding: 0.75rem 1rem; 
 
-    background: rgba(255, 255, 255, 0.9) padding-box, /* đổi nền: từ xám đục -> trắng mờ */
-                linear-gradient(90deg, #e74c3c, #1e90ff) border-box; /* thêm border gradient */
-    border: 1px solid transparent; /* thay border mặc định */
-    border-radius: 12px; /* đổi từ 10px -> 12px cho mềm mại hơn */
-    backdrop-filter: blur(8px); /* thêm hiệu ứng blur nền */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* đổi shadow: nhẹ hơn */
+    background: rgba(255, 255, 255, 0.9) padding-box,
+                linear-gradient(90deg, #e74c3c, #1e90ff) border-box; 
+    border: 1px solid transparent;
+    border-radius: 12px;
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
 
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* đổi từ 10px -> 0.5rem (rem để đồng bộ spacing) */
+    gap: 0.5rem; 
 
     opacity: 0;
     pointer-events: none;
     white-space: nowrap;
-    transition: opacity 0.3s ease; /* thêm hiệu ứng mượt khi hover */
+    transition: opacity 0.3s ease; 
 }
 
 .navbar-menu-item-sub {
@@ -103,17 +103,17 @@
 
 .navbar-submenu-item-text {
     text-decoration: none;
-    color: #012c56; /* đổi từ aliceblue -> xanh navy cho đồng bộ navbar */
-    font-size: 1rem; /* thêm để cân đối với menu chính */
-    font-weight: 500; /* thêm để chữ rõ nhưng không quá đậm */
-    padding: 0.4rem 0.8rem; /** thêm padding để hover dễ bấm */
-    border-radius: 6px; /* thêm bo góc nhỏ cho item */
-    transition: all 0.2s ease; /* thêm hiệu ứng hover mượt */
+    color: #012c56; 
+    font-size: 1rem; 
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;  
+    border-radius: 6px; 
+    transition: all 0.2s ease; 
 }
 
 .navbar-submenu-item-text:hover {
-    background-color: rgba(30,144,255,0.15); /* thêm nền xanh dương nhạt khi hover */
-    color: #e74c3c; /* đổi màu chữ hover: từ trắng -> đỏ cam */
+    background-color: rgba(30,144,255,0.15); 
+    color: #e74c3c;
 }
 
 
@@ -128,11 +128,11 @@
 .navbar-sign {
     margin-right: 2rem;
     padding: 0.5rem 0.75rem;
-    border: 2px solid #003366; /* đổi border: từ trắng mờ -> navy */
+    border: 2px solid #003366;
     border-radius: 20px;
 
     font-size: 1.25rem;
-    color: #003366; /* đổi text color: từ trắng mờ -> navy */
+    color: #003366; 
 
     background-color: rgba(251, 250, 250, 0.8);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
@@ -141,7 +141,7 @@
 }
 
 .navbar-sign:hover {
-    background: #2ecc71; /* đổi hover: từ xanh lá mờ -> xanh lá tươi */
-    border: 2px solid rgba(251, 250, 250, 0.8); /* đổi border hover: từ navy -> trắng mờ */
-    color: #fff; /* đổi text hover: từ mặc định -> trắng */
+    background: #2ecc71;
+    border: 2px solid rgba(251, 250, 250, 0.8); 
+    color: #fff; 
 }
