@@ -1,6 +1,6 @@
 .searchbar {
   position: relative;
-  margin: 170px auto 0;
+  margin: 155px auto 0; /* 170 -> 155*/
   width: 60%;
   max-width: 600px;
 
