@@ -6,11 +6,13 @@
     <title>Thủy Cảnh Việt</title>
     <link rel="icon" href="/images/Logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/search.css">
     <link rel="stylesheet" href="/css/banner.css">
     <link rel="stylesheet" href="/css/showcase.css">
+    <link rel="stylesheet" href="/css/signin.css">
 </head>
 <body>
     <header>
@@ -20,7 +22,7 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-menu-item"><a href="/html/index.html" class="navbar-menu-item-text active">Trang chủ</a></li>
-                <li class="navbar-menu-item navbar-menu-item-sub"><a href="#" class="navbar-menu-item-text">Sản Phẩm</a>
+                <li class="navbar-menu-item navbar-menu-item-sub"><a href="/html/product_page.html" class="navbar-menu-item-text">Sản Phẩm</a>
                     <ul class="navbar-submenu">
                         <li class="navbar-submenu-item"><a href="#" class="navbar-submenu-item-text">Cá nước ngọt</a></li>
                         <li class="navbar-submenu-item"><a href="#" class="navbar-submenu-item-text">Cá nước mặn</a></li>
@@ -86,12 +88,15 @@
                 <button class="showcase__button showcase__button--next">next</button>
             </section>
         </article>
+
         <article class="banner">
             <button class="banner__button banner__button--prev">&#10094;</button>
             <img src="/images/blog/Blog_1.png" alt="Event banner" class="banner__image" id="blog"/>
             <button class="banner__button banner__button--next">&#10095;</button>
         </article>
-        <footer>
+
+    </main>
+    <footer>
         <hr>
         <section class="footer__info">
             <h2>Thông tin liên hệ</h2>
@@ -104,7 +109,34 @@
         </section>
         <hr>
     </footer>
-    </main>
+    <div class="signin__overlay" id="signinOverlay">
+    <article class="signin__container">
+    <form>
+        <section class="signin__title">
+        <h1>Chào mừng trở lại</h1>
+        <hr>
+        <p>Đăng nhập vào tài khoản của bạn</p>
+        </section>
+        <input type="text" id="email" name="email" class="signin__input" placeholder="Email">
+        <input type="password" id="password" name="password" class="signin__input" placeholder="Mật khẩu">
+        <section class="extra__container">
+        <input type="checkbox" id="remember" name="remember" class ="signin__checkbox">
+        <label class="signin__checkbox--label">Remember?</label>
+        <a>Forgot password?</a>
+        </section>
+        <button class="signin__button">Sign in</button>
+        <div class="line--effect"><hr><p>Hoặc<p><hr></p></div>
+        <div class="signin--or">
+            <a href="#"><i class="fab fa-facebook fa-2x" style="color:#3b5998;"></i></a>
+            <a href="#"><i class="fab fa-google fa-2x" style="color:#db4437;"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x" style="color:#1da1f2;"></i></a>
+        </div>
+        <p>Bạn không có tài khoản ? <a href="#">Đăng ký ngay</a></p>
+    </form>
+    </article>
+    </div>
+    <script src="/js/showcase.js"></script>
     <script src="/js/banner.js"></script>
+    <script src="/js/signin_overlay.js"></script>
 </body>
 </html>
