@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="/css/signin.css">
 </head>
 <body>
+
+
     <header>
+        <!--phần menu-->
         <nav class="navbar">
             <div class="navbar-logo-container">
             <img class="navbar-logo"src="\images\Logo.png" alt="Logo">
@@ -33,7 +36,7 @@
                         <li class="navbar-submenu-item"><a href="#" class="navbar-submenu-item-text">Thức ăn & dung dịch</a></li>
                     </ul>
                 </li>
-                <li class="navbar-menu-item"><a href="#" class="navbar-menu-item-text">Blog</a></li>
+                <li class="navbar-menu-item"><a href="/html/blog.html" class="navbar-menu-item-text">Blog</a></li>
                 <li class="navbar-menu-item"><a href="#" class="navbar-menu-item-text">Liên hệ</a></li>
             </ul>
             <div class="navbar-sign-container">
@@ -46,12 +49,20 @@
             <button class="searchbar-button">Enter</button>
         </form>       
     </header>
+
+
+
     <main>
+        <!--(Phần banner sự kiện-->
         <article class="banner">
             <button class="banner__button banner__button--prev">&#10094;</button>
             <img src="/images/event/Event_1.png" alt="Event banner" class="banner__image" id="event"/>
             <button class="banner__button banner__button--next">&#10095;</button>
         </article>
+        <!--Phần banner sự kiện)-->
+
+
+        <!--(Phần show sản phẩm nổi bật-->
         <article class="showcase">
             <h1 class="showcase__title">Cá cảnh nổi bật :</h1>
             <section class="product__container" id="fish">
@@ -88,15 +99,22 @@
                 <button class="showcase__button showcase__button--next">next</button>
             </section>
         </article>
+        <!--Phần show sản phẩm nổi bật)-->
 
+
+        <!--(banner blog-->
         <article class="banner">
             <button class="banner__button banner__button--prev">&#10094;</button>
             <img src="/images/blog/Blog_1.png" alt="Event banner" class="banner__image" id="blog"/>
             <button class="banner__button banner__button--next">&#10095;</button>
         </article>
-
+        <!--banner blog)-->
     </main>
+
+
+
     <footer>
+        <!--thông tin liên hệ-->
         <hr>
         <section class="footer__info">
             <h2>Thông tin liên hệ</h2>
@@ -109,6 +127,9 @@
         </section>
         <hr>
     </footer>
+
+
+    <!--đăng nhập (ẩn)-->
     <div class="signin__overlay" id="signinOverlay">
     <article class="signin__container">
     <form>
@@ -121,10 +142,10 @@
         <input type="password" id="password" name="password" class="signin__input" placeholder="Mật khẩu">
         <section class="extra__container">
         <input type="checkbox" id="remember" name="remember" class ="signin__checkbox">
-        <label class="signin__checkbox--label">Remember?</label>
-        <a>Forgot password?</a>
+        <label class="signin__checkbox--label">Ghi nhớ tôi?</label>
+        <a>Quên mật khẩu?</a>
         </section>
-        <button class="signin__button">Sign in</button>
+        <button class="signin__button">Đăng nhập</button>
         <div class="line--effect"><hr><p>Hoặc<p><hr></p></div>
         <div class="signin--or">
             <a href="#"><i class="fab fa-facebook fa-2x" style="color:#3b5998;"></i></a>
@@ -135,6 +156,10 @@
     </form>
     </article>
     </div>
+
+
+
+
     <script src="/js/showcase.js"></script>
     <script src="/js/banner.js"></script>
     <script src="/js/signin_overlay.js"></script>
