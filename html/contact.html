@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/banner.css">
     <link rel="stylesheet" href="/css/showcase.css">
     <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
 
@@ -43,81 +44,48 @@
                 <button class="navbar-sign">Sign in</button>
             </div>
         </nav>
-        <form class="searchbar">
-            <label class="searchbar-label"> <i class="fa fa-search"></i></label>
-            <input type="text" placeholder="Nhập để tìm kiếm ..." class="searchbar-input">
-            <button class="searchbar-button">Enter</button>
-        </form>       
     </header>
 
-
-
     <main>
-        <!--(Phần banner sự kiện-->
-        <article class="banner">
-            <button class="banner__button banner__button--prev">&#10094;</button>
-            <img src="/images/event/Event_1.png" alt="Event banner" class="banner__image" id="event"/>
-            <button class="banner__button banner__button--next">&#10095;</button>
-        </article>
-        <!--Phần banner sự kiện)-->
-
-
-        <!--(Phần show sản phẩm nổi bật-->
-        <article class="showcase">
-            <h1 class="showcase__title">Cá cảnh nổi bật :</h1>
-            <section class="product__container" id="fish">
-                <img src="/images/product/Product_1.png" class="product--img img1">
-                <img src="/images/product/Product_2.png" class="product--img img2">
-                <img src="/images/product/Product_3.png" class="product--img img3">
-            </section>
-            <section class="showcase__button__container">
-                <button class="showcase__button showcase__button--prev">prev</button>
-                <button class="showcase__button showcase__button--next">next</button>
-            </section>
-        </article>
-        <article class="showcase">
-            <h1 class="showcase__title">Phụ kiện nổi bật :</h1>
-            <section class="product__container" id="accessory">
-                <img src="/images/product/Product_1.png" class="product--img img1">
-                <img src="/images/product/Product_2.png" class="product--img img2">
-                <img src="/images/product/Product_3.png" class="product--img img3">
-            </section>
-            <section class="showcase__button__container">
-                <button class="showcase__button showcase__button--prev">prev</button>
-                <button class="showcase__button showcase__button--next">next</button>
+        <article class="main-container">
+        <article class="contact-container">
+            <form>
+                <fieldset>
+                <legend>Hãy liên lạc qua</legend>
+                <input type="text" id="name" name="name" class="infor-input" placeholder="Họ và tên">
+                <input type="text" id="phone" name="phone" class="infor-input" placeholder="Số điện thoại">
+                <input type="text" id="email" name="email" class="infor-input" placeholder="Email">
+                <select>
+                    <option value="Tư vấn mua hàng">Tư vấn mua hàng</option>
+                    <option value="Tư vấn & bảo hành sản phẩm">Tư vấn & bảo hành sản phẩm</option>
+                    <option value="Nguồn cung cấp sỉ sản phẩm & hợp tác">Nguồn cung cấp sỉ sản phẩm & hợp tác</option>
+                    <option value="Cá cảnh & hồ cá muốn bán lại">Cá cảnh & hồ cá muốn bán lại</option>
+                    <option value="Khác">Khác</option>
+                </select>
+                <textarea rows="6" cols="50" placeholder="Nhập nội dung bạn cần ở đây . . ."></textarea>
+                <button>Gửi</button>
+            </fieldset>
+            </form>
+            <section class="contact-reason">
+                <h1>Hãy liên hệ với chúng tôi khi</h1>
+                <ul>
+                    <li><p>Bạn muốn tư vấn mua hàng, các sản phẩm cá,phụ kiện...</p></li>
+                    <li><p>Bạn muốn tư vấn & bảo hành sản phẩm đã được mua ở chúng tôi.</p></li>
+                    <li><p>Các nhà cung cấp sỉ các sản phẩm có liên quan muốn hợp tác.</p></li>
+                    <li><p>Các đồng ngư có cá lớn hoặc độc lạ hay hồ cá muốn bán lại.</p></li>
+                    <li><p>Đánh giá dịch vụ & đóng góp ý kiến.</p></li>
+                    <li><p>Báo cáo blog hay tin tức sai sự thật.</p></li>
+                </ul>
+                <p>Hoặc bất kì lí do nào khác mà bạn cần !</p>
             </section>
         </article>
-        <article class="showcase">
-            <h1 class="showcase__title">Hồ cá nổi bật :</h1>
-            <section class="product__container" id="tank">
-                <img src="/images/product/Product_1.png" class="product--img img1">
-                <img src="/images/product/Product_2.png" class="product--img img2">
-                <img src="/images/product/Product_3.png" class="product--img img3">
-            </section>
-            <section class="showcase__button__container">
-                <button class="showcase__button showcase__button--prev">prev</button>
-                <button class="showcase__button showcase__button--next">next</button>
-            </section>
-        </article>
-        <!--Phần show sản phẩm nổi bật)-->
-
-
-        <!--(banner blog-->
-        <article class="banner">
-            <button class="banner__button banner__button--prev">&#10094;</button>
-            <img src="/images/blog/Blog_1.png" alt="Event banner" class="banner__image" id="blog"/>
-            <button class="banner__button banner__button--next">&#10095;</button>
-        </article>
-        <!--banner blog)-->
-    </main>
-
-
-
-    <footer>
-        <!--thông tin liên hệ-->
         <hr>
-        <section class="footer__info">
-            <h2>Thông tin liên hệ</h2>
+        <article  class="channel-contact-container">
+            <section class="map-contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.63928765906!2d105.71628473775618!3d10.03418439795817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f09dbfb20b659!2zQ-G6p24gVGjGoSwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1759600257594!5m2!1svi!2s" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+            <section class="channel-info">
+            <h2>Các kênh truyền thông và địa chỉ chính thức</h2>
             <p>Địa chỉ: abcdf đường xyz, phường abcdf, TP abcdf</p>
             <p>Điện thoại: 0123456</p>
             <p>Email: abcdf@example.com</p>
@@ -125,9 +93,10 @@
             <p>Zalo: 0123456</p>
             <p>Instagram: @abcdf</p>
         </section>
-        <hr>
-    </footer>
-
+        
+    </article>
+    </article>
+    </main>
 
     <!--đăng nhập (ẩn)-->
     <div class="signin__overlay" id="signinOverlay">
