@@ -1,0 +1,85 @@
+.contact-container{
+    margin: 150px auto 0 auto;
+    width:1300px;
+    height:400px;
+    display:flex;
+}
+.contact-container form {
+    width:700px;
+    height:500px;
+}
+.contact-container form legend{
+    font-size: 25px;
+}
+.contact-container form input{
+    display:block;
+    margin: 10px  ;
+}
+.contact-container form select{
+    display:block;
+    margin:10px;
+}
+.contact-container form button{
+    margin:10px;
+}
+
+.contact-container form textarea {
+    display:block;
+    width: 80%;
+    height: 150px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.contact-reason{
+    margin-left:20px;
+    & h1 {
+        margin-top:5px;
+        margin-bottom:5px;
+        font-size: 40px;
+    }
+    & p {
+        font-size: 20px;
+    }
+}
+.contact-reason> p{
+    margin-left: 20px;;
+}
+
+.channel-contact-container{
+    display:flex;
+    margin-top: 40px;
+    padding-bottom:20px;
+    width:1300px;
+    height:475px;
+    margin:auto;
+    
+}
+.channel-info{
+    flex:1;
+    width:600px;
+    height:450px;
+    margin-left: 40px;
+    margin-top:50px;
+    margin-bottom:auto;
+}
+.channel-info h2{
+    margin-left:20px;
+    font-size:30px;
+}
+.channel-info p{
+    margin-left:20px;
+    font-size:20px;
+}
+.map-contact{
+    flex: 1;
+  min-width: 280px;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px auto 0 auto;
+  padding:5px;
+  border:2px solid;
+}

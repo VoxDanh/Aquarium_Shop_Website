@@ -1,0 +1,35 @@
+.showcase {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.showcase__title {
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 25px;
+}
+
+.product__container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.product--img {
+  margin-right: 25px;
+  width: 400px;
+  height: auto;
+}
+
+.showcase__button__container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.showcase__button {
+  margin-right: 20px;
+  font-size: 30px;
+}
