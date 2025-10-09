@@ -77,7 +77,42 @@
   background-color: #ffffff;
   color: #2d3436;
 }
+.signup__row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; /* khoảng cách giữa hai ô */
+  width: 80%;
+  max-width: 500px;
+  margin: 10px auto;
+  flex-wrap: wrap; /* để xuống dòng tự động khi màn hình nhỏ */
+}
 
+/* Bên phải chứa label + input ngày sinh */
+.signup__dob {
+  display: flex;
+  flex-direction: column;
+  width: 48%; /* chiếm gần nửa hàng */
+}
+
+/* Ô nhập tên chiếm nửa còn lại */
+.signup__row .signup__input {
+  width: 48%;
+  max-width: none; /* bỏ giới hạn 250px để căn đều */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 480px) {
+  .signup__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup__row .signup__input,
+  .signup__dob {
+    width: 100%;
+  }
+}
 .signin__button {
   display: block;
   margin-top: 15px;

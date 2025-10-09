@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .blog-content-list {
   padding: 10px;
   background-color: rgb(184, 201, 231);
@@ -70,7 +69,7 @@
 
 .blog-control__button:hover {
   background-color: rgba(30, 144, 255, 1);
-=======
+}
 .blog-title{
   text-align: center;
   font-size: 40px;
@@ -133,5 +132,5 @@
   & p {
     padding:5px;
   }
->>>>>>> e7317fb0af0c41372ad8ede6e22739bb798de25b
+
 }
